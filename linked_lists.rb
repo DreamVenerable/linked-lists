@@ -130,10 +130,10 @@ class Node
 end
 
 
-list = LinkedList.new(1400)
+list = LinkedList.new(1423)
 
-list.append(126)
-list.prepend(145)
+list.append(12)
+list.prepend(14)
 list.append('LoveRuby')
 list.insert_at('X', 2)
 list.remove_at(2)
