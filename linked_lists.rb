@@ -1,3 +1,13 @@
+class Node
+  attr_reader :data
+  attr_accessor :next_node
+  
+  def initialize(data = nil, next_node = nil)
+    @data = data
+    @next_node = next_node
+  end
+end
+
 class LinkedList
   def initialize(data, next_node = nil)
     @head = Node.new(data)
@@ -121,17 +131,6 @@ class LinkedList
   end
 end
 
-class Node
-  attr_reader :data
-  attr_accessor :next_node
-  
-  def initialize(data = nil, next_node = nil)
-    @data = data
-    @next_node = next_node
-  end
-end
-
-
 list = LinkedList.new(1423)
 
 list.append(12)
@@ -139,5 +138,4 @@ list.prepend(14)
 list.append('LoveRuby')
 list.insert_at('X', 2)
 list.remove_at(2)
-
 list.to_s
